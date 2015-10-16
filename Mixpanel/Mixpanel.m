@@ -1398,7 +1398,7 @@ static void MixpanelReachabilityCallback(SCNetworkReachabilityRef target, SCNetw
         MPSurveyNavigationController *controller = [storyboard instantiateViewControllerWithIdentifier:@"MPSurveyNavigationController"];
         controller.survey = survey;
         controller.delegate = self;
-        controller.backgroundImage = [presentingViewController.view mp_snapshotImage];
+//        controller.backgroundImage = [presentingViewController.view mp_snapshotImage];
         [presentingViewController presentViewController:controller animated:YES completion:nil];
     }
 }
